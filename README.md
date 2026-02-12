@@ -92,8 +92,27 @@ Python -->|Store Results| DB
     - 3D trajectory mapping.
     - AI Coach reporting.
 
+## 🔧 Development Workflow
+
+This project uses [OpenSpec](https://github.com/Fission-AI/OpenSpec) for spec-driven development (SDD) with AI assistants.
+
+### OpenSpec Commands
+
+- `/opsx:new <change-name>` - Start a new feature/change with structured planning
+- `/opsx:continue` - Create the next artifact in the workflow
+- `/opsx:ff` - Fast-forward through all planning documents
+- `/opsx:apply` - Implement the tasks from your plan
+- `/opsx:verify` - Verify implementation against specs
+- `/opsx:archive` - Archive completed change and update specs
+
+### Workflow
+
+1. **Plan**: Use `/opsx:new` to create a proposal, specs, and design docs
+2. **Implement**: Use `/opsx:apply` to execute tasks
+3. **Archive**: Use `/opsx:archive` to finalize and update project specs
+
+All changes are tracked in `openspec/changes/` and project specs in `openspec/specs/`.
+
 ## 📄 License
 
 MIT
-
-```

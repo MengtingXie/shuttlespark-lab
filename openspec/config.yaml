@@ -1,0 +1,33 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Tech stack:
+    - Backend: Go 1.25+ with Huma framework (OpenAPI 3.1, JSON Schema)
+    - Frontend: React (Vite), SVG/D3.js for visualizations
+    - Database: PostgreSQL + TimescaleDB for time-series data
+    - AI: Python, FastAPI, Celery + Redis (async processing)
+    - Models: TrackNetV3, YOLOv8, MMPose
+  
+  Domain: Badminton match analysis platform
+    - Manual tagging + automated CV insights
+    - Shot placement, movement tracking, rally recording
+    - Performance analytics, heatmaps, tactical visualization
+  
+  Conventions:
+    - Go: Standard project layout, error handling with explicit checks
+    - API: RESTful with OpenAPI specs via Huma
+    - Frontend: Component-based React with SVG interactions
+    - Clean separation: Go for web services, Python for AI/ML
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
